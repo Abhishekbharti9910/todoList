@@ -1,0 +1,50 @@
+@font-face {
+
+    font-family: 'MyFont';
+  
+    src: url('./Rubik/Rubik-VariableFont_wght.ttf') format('ttf'),
+  
+      url('./Rubik/Rubik-Italic-VariableFont_wght.ttf') format('ttf');
+  
+    font-weight: 300;
+  
+    font-style: normal;
+  
+  }
+
+*{
+    font-family: 'MyFont';
+}
+
+#menubar {
+    width: 20vw;
+    height: 90vh;
+    background-color: var(--nav);
+    overflow: hidden;
+}
+
+#menu-heading {
+    /* text-align: center; */
+    margin: 30px 0 20px 18px;
+    color: thistle;
+
+}
+
+.collections-item {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.collections-item > img{
+    width: 50px;
+    height: 53px;
+    margin: 20px 0px 20px 15px;
+}
+
+.collections-item > h5{
+    font-size: 14px;
+    color: thistle;
+    font-style: revert;
+}

@@ -1,0 +1,8 @@
+nav and menu : #21212B;
+
+background : #181820;
+
+menu-btn color : #8A8A90;
+
+background: rgb(237,9,119);s
+background: linear-gradient(90deg, rgba(237,9,119,1) 0%, rgba(170,25,148,1) 35%, rgba(0,212,255,1) 100%); 
