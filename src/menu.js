@@ -31,7 +31,7 @@ const createCollection = (image, name) => {
 const collectionsMenu = () => {
     const collections = document.createElement("div");
     collections.id = "menu-collections";
-    collections.append(createCollection(deflt, "default"));
+    collections.append(createCollection(deflt, "Default"));
     
     return collections;
 }

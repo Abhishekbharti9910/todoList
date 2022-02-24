@@ -14,14 +14,17 @@ let createUnorderedList = (numOfList, clsLis, ...args) => {
         let myImage = new Image();
         myImage.src = args[i];
 
+        // this is only for add btn, to add id to manipulate it
+        if (args[i] == add) {
+            myImage.id = "add-btn";
+        }
+
         let li = document.createElement("li");
         li.classList.add(clsLis);
         li.append(myImage);
         ul.appendChild(li);
     }
 
-    
-    // div.append(ul);
 
     return ul;
 }
@@ -53,7 +56,7 @@ const header = () => {
 
     navbar.append(dl);
     navbar.append(dr);
-
+    
     return header;
 }
 

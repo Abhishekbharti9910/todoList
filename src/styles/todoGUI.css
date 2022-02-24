@@ -1,0 +1,21 @@
+
+
+.todo-strip{
+    background-color: rgb(17, 18, 20);;
+    width: 420px;
+    height: 47px;
+    font-style: "MyFont";
+}
+
+.circle {
+    background: #456BD9;
+    clip-path: circle(46%);
+    height: 31px;
+    width: 30px;
+  }
+
+.title-container {
+    width: 140px;
+    height: 40px;
+    margin-left: 12px;
+}
