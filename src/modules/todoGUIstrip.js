@@ -17,8 +17,14 @@ const todoUnit = () =>{
     const h2 = document.createElement("h6");
     h2.innerText = "hey change it dynamically";
     // titleContainer.append(h2);
-
     continer.append(h2);
+
+    // todo strip remover icon
+    let rmvBtn = document.createElement("button");
+    rmvBtn.classList.add("button-remove");
+    continer.append(rmvBtn);
+
+    
 
     return continer;
 }

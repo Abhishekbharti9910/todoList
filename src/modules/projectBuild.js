@@ -1,10 +1,22 @@
-import Todo from "./todo";
-
-const Project = (projectNme, ttle, prio, date) => {
+const Project = (projectNme, theme) => {
    
     const projectName = projectNme;
-    const todo = Todo(ttle, prio, date);
-    return {projectName, todo};
+    
+    return {projectName, theme};
+}
+
+// this function return the array of all todos in same project
+Project.prototype.getAllTodo = function(data, projectName) {
+    let projectTodos = []
+    if (data !== null || data.length !== 0) {
+            projectTodos = data.filter((todo) => {
+                if (projectName === todo.getProjectName()) {
+                    return todo;
+                }
+            })
+    }
+
+    return projectTodos;
 }
 
 export default Project;

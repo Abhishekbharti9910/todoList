@@ -21,12 +21,6 @@ const add = () =>{
                     <label for="title" class="form-label">Title*</label>
                     <input type="text" id="title" class="form-input">
 
-                    <label class="form-label">Choose Project*</label>
-                    <select id="project-select" class="form-input">
-                    <option value="">add project</option>
-                    <option value="">Default</option>
-                    </select>
-
                     <label for="due date" class="form-label">Due date</label>
                     <input type="date" id="date" class="form-input">
 

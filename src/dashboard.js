@@ -1,7 +1,7 @@
 import './styles/dashboard.css';
 import menu from './menu';
 import add from './modules/add';
-import todoUnit from './modules/todoGUI'
+import todoUnit from './modules/todoGUIstrip'
 
 
 const collectionDashTemplate = () => {
