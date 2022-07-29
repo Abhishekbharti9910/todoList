@@ -1,6 +1,7 @@
 // all event listner are specified here
 
 //1. for hiding and shoding form to add todos
+import projectForm from './ProjectAddFrom';
 
 const eventListners = () => (() => {
     const addBtnClicked = () => {
@@ -12,7 +13,19 @@ const eventListners = () => (() => {
         })
     }
 
-    return {addBtnClicked: addBtnClicked,}
+    const hamburgClicked = () => {
+
+    }
+
+    const addCollection = () => {
+        const div = document.getElementById("collAddBtn");
+        div.addEventListener("click", ()=> {
+            console.log("hello");
+        })
+        document.getElementsByTagName("body").innerHtml = projectForm();
+    }
+
+    return {addBtnClicked, addCollection}
 })()
 
 

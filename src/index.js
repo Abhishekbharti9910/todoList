@@ -1,7 +1,7 @@
 import header from "./header.js";
 import dashboard from "./dashboard.js";
 import add from './modules/add';
-import eventListners  from "./modules/eventsListner.js";
+import eventListners from "./modules/eventsListner.js";
 
 import './styles/header.css';
 
@@ -14,4 +14,5 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.append(header());
     document.body.append(dashboard());
     allTheListners.addBtnClicked();
+    allTheListners.addCollection();
 });
