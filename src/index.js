@@ -5,6 +5,8 @@ import eventListners from "./modules/eventsListner.js";
 
 import './styles/header.css';
 
+let project = [];
+let todos = [];
 
 window.addEventListener('DOMContentLoaded', () => {
     
@@ -15,4 +17,5 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.append(dashboard());
     allTheListners.addBtnClicked();
     allTheListners.addCollection();
+    allTheListners.projectSubmitBtnClicked(project);
 });

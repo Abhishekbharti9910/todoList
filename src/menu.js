@@ -2,9 +2,6 @@ import './styles/menu.css';
 import deflt from './pngs/default.png';
 import add from './pngs/add.png';
 
-// project pics import
-import camera from './collection_pic/camera.png'
-// projects pics import end here
 
 // menubar heading
 const menuHeading = () => {

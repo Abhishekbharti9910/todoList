@@ -1,8 +1,9 @@
-const Project = (projectNme, theme) => {
+const Project = (projectNme, img) => {
    
     const projectName = projectNme;
+    const image = img;
     
-    return {projectName, theme};
+    return {projectName, image};
 }
 
 // this function return the array of all todos in same project

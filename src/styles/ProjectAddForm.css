@@ -1,0 +1,68 @@
+.project-add-form{
+    width: 70vw;
+    height: 80vh;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1b1a1cfa; ;
+    border-radius: 25px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+    justify-content: center;
+    align-items: center;
+    color: thistle;
+    font-family: monospace;
+}
+
+.hide{
+    display: none;
+}
+
+#projectName{
+    color:  rgb(180, 39, 133);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.project-add-form > h3 {
+    color: rgb(180, 39, 133);
+}
+
+#choose-pics {
+    width: 70vw;
+    height: 60vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#choose-pics :hover{
+    border-radius: 25px;
+    scale: 0.9;
+    border: 2px solid rgb(180, 39, 133);
+}
+
+.project-img {
+    width: 100px;
+    height: 100px;
+    margin: 12px;
+}
+
+#submit-project {
+    background-color: rgb(180, 39, 133);
+    height: 41px;
+    width: 123px;
+    text-align: center;
+    padding-top: 13px;
+    color: white;
+    margin: 25px auto;
+    border-radius: 9px;
+    cursor: pointer;
+}
