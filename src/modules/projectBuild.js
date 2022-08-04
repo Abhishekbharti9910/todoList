@@ -1,23 +1,23 @@
 const Project = (projectNme, img) => {
    
-    const projectName = projectNme;
+    const title = projectNme;
     const image = img;
     
-    return {projectName, image};
+    return {title, image};
 }
 
-// this function return the array of all todos in same project
-Project.prototype.getAllTodo = function(data, projectName) {
-    let projectTodos = []
-    if (data !== null || data.length !== 0) {
-            projectTodos = data.filter((todo) => {
-                if (projectName === todo.getProjectName()) {
-                    return todo;
-                }
-            })
-    }
+// // this function return the array of all todos in same project
+// Project.prototype.getAllTodo = function(data, projectName) {
+//     let projectTodos = []
+//     if (data !== null || data.length !== 0) {
+//             projectTodos = data.filter((todo) => {
+//                 if (title=== todo.getProjectName()) {
+//                     return todo;
+//                 }
+//             })
+//     }
 
-    return projectTodos;
-}
+//     return projectTodos;
+// }
 
 export default Project;

@@ -1,7 +1,8 @@
 import './styles/dashboard.css';
-import menu from './menu';
+import {menuPanel} from './menu';
 import add from './modules/add';
 import todoUnit from './modules/todoGUIstrip'
+import Project from './modules/projectBuild';
 
 
 const collectionDashTemplate = () => {
@@ -65,7 +66,7 @@ const dashContent = () => {
 const dashboard = () => {
     const main = document.createElement("main");
     main.id = "dashboard";
-    main.append(menu());
+    main.append(menuPanel());//here project is added in left menu pane
     main.append(dashContent());
     
 

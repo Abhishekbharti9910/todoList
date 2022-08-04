@@ -3,10 +3,13 @@
 //1. for hiding and shoding form to add todos
 import { sub } from 'date-fns';
 import projectForm from './ProjectAddFrom';
+import Project from './projectBuild';
+import { projectAdder } from '../menu';
 // import project from './projectBuild'
 
 const eventListners = () => (() => {
-
+    var img;
+    var projects = []
     // todo adder
     const addBtnClicked = () => {
         console.log("hi");
@@ -32,27 +35,38 @@ const eventListners = () => (() => {
         body.append(projectForm());
     }
 
-    // sumit project button clicked
-    const projectSubmitBtnClicked = (project) => {
+    // submit project button clicked
+    const projectSubmitBtnClicked = () => {
         const submit = document.getElementById("submit-project");
+        
         submit.addEventListener("click", () => {
             const title = document.getElementById("projectName");
             console.log(title.value);
+            console.log(img.srcElement.src);
+            let project = Project(title.value, img.srcElement.src);
+            console.log(project);
+            projects.push(project);
+            projects.forEach( project => {
+                projectAdder(project)
+            })
+            // please check here is error and
+            console.log(projects); 
         })
+
     }
 
     // pic is choose for project
     const picSelected = () => {
-        const pics = document.getElementsByClassName("project-img");
-        let imgTag = null;
+        const pics = document.querySelectorAll(".project-img");
         pics.forEach(element => {
             element.addEventListener("click", (e) => {
-                console.log(e);
-                imgTag = e;
+                img = e;
+                // return e;
             })
         });
-        return imgTag;
     }
+
+    // when clicked make submit btn active
 
 
 

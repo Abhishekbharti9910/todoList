@@ -1,6 +1,7 @@
 import './styles/menu.css';
 import deflt from './pngs/default.png';
 import add from './pngs/add.png';
+import Project from './modules/projectBuild';
 
 
 // menubar heading
@@ -39,23 +40,25 @@ const createCollection = (image, name) => {
 }
 
 // collection creation 
-const collectionsMenu = (projects) => {
+const collectionsMenu = (element) => {
     const collections = document.createElement("div");
     collections.id = "menu-collections";
-    collections.append(createCollection(deflt, "Default"));
-    if (projects != undefined && projects != null && projects.length != 0) {
-        projects.map((project) => {
-            collections.append(createCollection(project.pic, project.name));
-        })
-    }
+
     return collections;
 }
 
+// project adder in left pane
+const projectAdder = (project) => {
+    console.log("collection add func", project);
+    const collection = document.getElementById("menu-collections");
+    collection.append(createCollection(project.image, project.title));
+}
+
 // whole collection building
-const menuPanel = (projects, todos) => {
+const menuPanel = () => {
     const menubar = document.createElement("div");
     menubar.id = "menubar";
-    
+
     menubar.append(menuHeading());
     menubar.append(collectionsMenu());
     menubar.append(collAddBtn());
@@ -63,4 +66,4 @@ const menuPanel = (projects, todos) => {
     return menubar;
 }
 
-export default menuPanel;
+export  {menuPanel, projectAdder};
